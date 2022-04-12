@@ -65,3 +65,130 @@ button>img{
 #footerest>div>span{
    padding: 10px;
 }
+
+*{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#fridaySale{
+    width: 75%;
+    margin: auto;
+}
+#fridaySale >img{
+    width: 100%;
+}
+.subHeading{
+    padding: 10px;
+}
+.subHeading >h2{
+    text-align: center;
+}
+#saleContainer{
+    display: flex;
+}
+.cmWidth{
+    width:70%;
+    margin: auto;
+}
+.middleSale{
+    margin: 40px auto;
+}
+.middleSale > img{
+    width: 100%;
+}
+#saleContainer >div{
+   flex:1;
+}
+#saleContainer >div >img{
+    max-width: 100%;
+}
+#saleContainer >div > h4{
+    margin: 0px;
+    padding: 16px 10px;
+    text-align: center;
+}
+#category{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-bottom: 40px;
+}
+
+#category >div >img{
+    max-width: 100%;
+}
+#category >div >p{
+    text-align: center;
+    color: #545658;
+}
+.leftArr{
+    display: flex;
+    justify-content: space-between;
+}
+.leftArr >div{
+    width:24%;
+   background-color: #f5f5f5;
+}
+
+.leftArr >div >img{
+    max-width: 100%;
+}
+.leftArr >div >h3,.leftArr>div>p{
+    padding: 0px 14px;
+}
+#overstockBrands{
+    display: flex;
+    justify-content: space-between;
+}
+#overstockBrands >div{
+    width: 24%;
+    background-color: #f5f5f5;
+}
+#overstockBrands >div> img{
+    max-width: 100%;
+}
+#overstockBrands >div >p{
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+}
+#overstockBrands >div >p:nth-child(2){
+    font-weight: bold;
+}
+#overlayContainer{
+    position:relative;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+}
+.overlay >img{
+    width: 100%;
+}
+
+#yourStyle >div{
+    width:32.5%;
+}
+#btnStyle{
+    
+    background-color: #545658;
+    color:white;
+    margin:30px auto;
+    display: block;
+    padding: 15px 25px;
+    border:0px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+#tableData>table{
+    width: 100%;
+    text-align: center;
+    background-color:#f5f5f5;
+    border-collapse: collapse;
+}
+td{
+    padding: 15px;
+    border: 10px solid rgb(255, 255, 255);
+    font-weight: bold;
+    color: #545658;
+}
+
