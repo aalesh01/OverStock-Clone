@@ -2,10 +2,10 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    width: 100%;
 }
 .nav{
     width: 100%;
-    margin: auto;
 }
 #logo{
     width:200px;
@@ -14,10 +14,8 @@ body{
 #logoSearch{
     display: flex;
     align-items: center;
-    width: 100%;
     justify-content: space-evenly;
     border: 1px solid black;
-    border-bottom: 0;
     background-color: rgb(249, 250, 251);
 }
 #logoSearch>div>input{
@@ -70,7 +68,7 @@ button>img{
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 #fridaySale{
-    width: 75%;
+    width: 90%;
     margin: auto;
 }
 #fridaySale >img{
@@ -86,7 +84,7 @@ button>img{
     display: flex;
 }
 .cmWidth{
-    width:70%;
+    width:90%;
     margin: auto;
 }
 .middleSale{
