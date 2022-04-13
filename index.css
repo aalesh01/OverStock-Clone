@@ -202,7 +202,6 @@ td{
     font-weight: bold;
     color: #545658;
 }
-<<<<<<< HEAD
 
 /* -----------------------list drop Down Menu */
 .dropdown {
@@ -323,11 +322,9 @@ td{
   .account-dropdown:hover.account-dropdown-content {display: block;}
   .sign_in:hover .sign{text-decoration:underline;}
   .create_account:hover .account{text-decoration: underline;}
-=======
 #qlinks{
     display: flex;
 }
 #qlinks>div{
     padding: 5%;
 }
->>>>>>> 5fb24812a147041f86505e8f1bfab8618f1e2974
