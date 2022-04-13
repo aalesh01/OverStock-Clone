@@ -16,10 +16,12 @@ body{
     align-items: center;
     justify-content: space-evenly;
     border: 1px solid black;
+    width: 100%;
+    flex-wrap: wrap;
     background-color: rgb(249, 250, 251);
 }
 #logoSearch>div>input{
-    width: 800px;
+    width:60vw;
     font-size: 20px;
     padding: 5px;
 }
@@ -41,11 +43,18 @@ button>img{
 }
 #categories{
     display: flex;
-    justify-content: space-evenly;
+    gap:3%;
+    flex-wrap: wrap;
     border: 1px solid black;
     padding: 10px;
+<<<<<<< HEAD
     /* text-decoration: none; */
 
+=======
+}
+#categories>a{
+    margin-bottom:1%;
+>>>>>>> 5fb24812a147041f86505e8f1bfab8618f1e2974
 }
 div>a{
     text-decoration: none;
@@ -193,6 +202,7 @@ td{
     font-weight: bold;
     color: #545658;
 }
+<<<<<<< HEAD
 
 /* -----------------------list drop Down Menu */
 .dropdown {
@@ -313,3 +323,11 @@ td{
   .account-dropdown:hover.account-dropdown-content {display: block;}
   .sign_in:hover .sign{text-decoration:underline;}
   .create_account:hover .account{text-decoration: underline;}
+=======
+#qlinks{
+    display: flex;
+}
+#qlinks>div{
+    padding: 5%;
+}
+>>>>>>> 5fb24812a147041f86505e8f1bfab8618f1e2974
