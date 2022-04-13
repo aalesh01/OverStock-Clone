@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+</head>
+<style>
+
+.account-dropdown {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.account-dropdown a{
+    text-decoration: none;
+    color: #000101;
+}
+
+
+.account-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.account-dropdown-content a {
+  color: #615d5d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+
+}
+div>div+hr{
+    margin: 10px; 
+
+}
+.sign >h2{
+    margin: 0px;
+}
+.account >h2{
+    margin: 0px;
+}
+
+
+
+.account-dropdown-content > a:hover {background-color: #fff; color: black; text-decoration: underline;}
+
+.account-dropdown:hover .account-dropdown-content {display: block;}
+.sign_in:hover .sign{text-decoration:underline;}
+.create_account:hover .account{text-decoration: underline;}
+</style>
+<body>
+    <div class="account-dropdown">
+        <a href="" >Account</a>
+        <div class="account-dropdown-content">
+            <div class="sign_in">
+                <a href="" class="sign"><h2>Sign in</h2></a>
+                <a href="">view your account and check your order status</a>
+            </div>
+            <hr>
+            <div class="create_account">
+                <a href="" class="account"><h2>Create an Account</h2></a>
+                <a href="">Track orders,save items to list and more!</a>
+            </div>
+            <hr>
+            <a href="">My Account</a>
+            <a href="">My Orders</a>
+            <a href="">My Reviews</a>
+            <a href="">Help</a>
+        </div>
+    </div>
+
+      
+</body>
+</html>
