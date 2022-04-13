@@ -232,7 +232,7 @@ td{
   .dropdown:hover .dropdown-content {display: block;}
 
   /* --------------Account_Drop Down menu------------------ */
-  .account-dropdown {
+  /* .account-dropdown {
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -267,4 +267,49 @@ td{
   }
   .account >h2{
       margin: 0px;
+  } */
+  .account-dropdown {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
   }
+  .account-dropdown a{
+      text-decoration: none;
+      color: #000101;
+  }
+  
+  
+  .account-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .account-dropdown-content a {
+    color: #615d5d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  
+  }
+  div>div+hr{
+      margin: 10px; 
+  
+  }
+  .sign >h2{
+      margin: 0px;
+  }
+  .account >h2{
+      margin: 0px;
+  }
+  
+  
+  
+  .account-dropdown-content > a:hover {background-color: #fff; color: black; text-decoration: underline;}
+  
+  .account-dropdown:hover.account-dropdown-content {display: block;}
+  .sign_in:hover .sign{text-decoration:underline;}
+  .create_account:hover .account{text-decoration: underline;}
