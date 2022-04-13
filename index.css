@@ -47,14 +47,11 @@ button>img{
     flex-wrap: wrap;
     border: 1px solid black;
     padding: 10px;
-<<<<<<< HEAD
     /* text-decoration: none; */
 
-=======
 }
 #categories>a{
     margin-bottom:1%;
->>>>>>> 5fb24812a147041f86505e8f1bfab8618f1e2974
 }
 div>a{
     text-decoration: none;
