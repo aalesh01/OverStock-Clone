@@ -15,8 +15,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid black;
-    width: 100%;
+    border: 1px solid black;                                    
     flex-wrap: wrap;
     background-color: rgb(249, 250, 251);
 }
@@ -94,7 +93,7 @@ div>a{
     display: flex;
 }
 .cmWidth{
-    width:90%;
+    width:85%;
     margin: auto;
 }
 .middleSale{
@@ -233,9 +232,13 @@ td{
   
   }
   
-  .dropdown-content a:hover {background-color: #fff; color: black;}
+  .dropdown-content a:hover {
+      background-color: #fff; color: black;
+    }
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
 
   /* --------------Account_Drop Down menu------------------ */
   /* .account-dropdown {
@@ -299,26 +302,36 @@ td{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  
+    font-size: 14px;
   }
   div>div+hr{
       margin: 10px; 
   
   }
-  .sign >h2{
+  .sign >h4{
       margin: 0px;
   }
-  .account >h2{
+  .account >h4{
       margin: 0px;
   }
   
   
   
-  .account-dropdown-content > a:hover {background-color: #fff; color: black; text-decoration: underline;}
+  .account-dropdown-content > a:hover {
+      background-color: #fff; 
+      color: black; 
+      text-decoration: underline;
+    }
   
-  .account-dropdown:hover.account-dropdown-content {display: block;}
-  .sign_in:hover .sign{text-decoration:underline;}
-  .create_account:hover .account{text-decoration: underline;}
+  .account-dropdown:hover .account-dropdown-content {
+      display: block;
+    }
+  .sign_in:hover .sign{
+      text-decoration:underline;
+    }
+  .create_account:hover .account{
+      text-decoration: underline;
+    }
 #qlinks{
     display: flex;
 }
