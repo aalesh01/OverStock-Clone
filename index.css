@@ -16,10 +16,12 @@ body{
     align-items: center;
     justify-content: space-evenly;
     border: 1px solid black;
+    width: 100%;
+    flex-wrap: wrap;
     background-color: rgb(249, 250, 251);
 }
 #logoSearch>div>input{
-    width: 800px;
+    width:60vw;
     font-size: 20px;
     padding: 5px;
 }
@@ -41,10 +43,13 @@ button>img{
 }
 #categories{
     display: flex;
-    justify-content: space-evenly;
+    gap:3%;
+    flex-wrap: wrap;
     border: 1px solid black;
     padding: 10px;
-
+}
+#categories>a{
+    margin-bottom:1%;
 }
 
 #fo_links{
@@ -189,4 +194,9 @@ td{
     font-weight: bold;
     color: #545658;
 }
-
+#qlinks{
+    display: flex;
+}
+#qlinks>div{
+    padding: 5%;
+}
