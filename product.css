@@ -87,7 +87,12 @@
     margin-top: 50px;
     display: flex;
 }
-
+#decorateIdeas img,#chaiseLounge img{
+    width:100%;
+}
+#decorateIdeas>div,#chaiseLounge >div{
+    width: 50%;
+}
 #chaiseLounge >div:last-child{
     padding-left: 20px;
 }
