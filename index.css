@@ -16,7 +16,6 @@ body{
     align-items: center;
     justify-content: space-evenly;
     border: 1px solid black;
-    width: 100%;
     flex-wrap: wrap;
     background-color: rgb(249, 250, 251);
 }
@@ -199,4 +198,9 @@ td{
 }
 #qlinks>div{
     padding: 5%;
+}
+#hoveredCard{
+    position:absolute;
+    background-color:rgb(236, 163, 163);
+    
 }
