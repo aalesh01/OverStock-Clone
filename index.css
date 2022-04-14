@@ -2,8 +2,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 100%;
-   
 }
 * a,* a:visited,* a:hover,* a:active {
     color: inherit;
@@ -20,7 +18,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid black;
     width: 90%;
     margin: auto;
     /* border-bottom: 1px solid black; */
@@ -90,10 +87,12 @@ div>a{
 }
 .footer{
     min-width: 100%;
+    
 }
 .footer h4 ,.footer p,.footer span{
     margin: 18px auto;
     font-size: 12px;
+    color:white;
 }
 #fo_links{
     display: flex;
@@ -411,4 +410,168 @@ td{
     #fridaySale{
         width: 100%;
     }
+}
+
+#hoveredCard{
+    position: absolute;
+    background-color: white;
+}
+
+  /* products.css */
+
+* {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #2f3337;
+}
+
+#middleSection {
+    width: 90%;
+    margin: auto;
+}
+
+#middleSection>h1 {
+    margin-bottom: 50px;
+}
+
+#category {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+#category>div>img {
+    width: 97%;
+
+}
+
+#sideGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#sideGrid>div {
+    background-color: #f5f5f5;
+}
+
+#sideGrid>div>img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+#sideGrid>div:last-child>img {
+    margin-top: 10px;
+}
+
+.featuredCategories>h2 {
+    margin-top: 0px;
+}
+
+.featuredCategories>p {
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+}
+
+#sideGrid>div:first-child {
+    margin-bottom: 15px;
+}
+
+.featuredCategories>p:hover {
+    background-color: #f5f5f5;
+    border-left: 2px solid #0272a2;
+}
+
+.featuredCategories>p:last-child {
+    font-weight: bold;
+    color: red;
+}
+
+.featuredCategories>p:last-child:hover {
+    border-left: 2px solid red;
+}
+
+.normalbold {
+    font-weight: normal;
+    margin-bottom: -15px;
+}
+
+#sideGrid h2 {
+    text-align: center;
+}
+
+#middleSection>h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#popularFurniture {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#popularFurniture>div {
+    background-color: #f5f5f5;
+}
+
+#popularFurniture p {
+    text-align: center;
+}
+
+#popularFurniture img {
+    width: 100%
+}
+
+#decorateIdeas,
+#chaiseLounge {
+    margin-top: 50px;
+    display: flex;
+}
+
+#decorateIdeas img,
+#chaiseLounge img {
+    width: 100%;
+}
+
+#decorateIdeas>div,
+#chaiseLounge>div {
+    width: 50%;
+}
+
+#chaiseLounge>div:last-child {
+    padding-left: 20px;
+}
+
+#decorateIdeas>div:first-child {
+    padding-right: 20px;
+}
+
+#decorateIdeas button,
+#chaiseLounge button {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #2f3337;
+    border-radius: 5px;
+}
+
+#decorateIdeas p,
+#chaiseLounge p {
+    font-size: 14px;
+    line-height: 1.3rem;
+}
+
+#moreFurniture {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#moreFurniture img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+#moreFurniture p {
+    text-align: center;
 }
