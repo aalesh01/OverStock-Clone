@@ -1,84 +1,143 @@
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 100%;
 }
+* a,* a:visited,* a:hover,* a:active {
+    color: inherit;
+  }
 .nav{
     width: 100%;
 }
+
 #logo{
-    width:200px;
-    height: 70px;
+    width: 100%;
+  
 }
 #logoSearch{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid black;
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    /* border-bottom: 1px solid black; */
     flex-wrap: wrap;
     background-color: rgb(249, 250, 251);
 }
+#logoSearch >div:first-child{
+    width: 10%;
+}
 #logoSearch>div>input{
-    width:60vw;
+    width:96%;
     font-size: 20px;
     padding: 5px;
+    border: 1px solid #dadcdf;
+    border-radius: 5px;
+}
+#searchbar button{
+    width:4%;
+    background-color: white;
+    margin-left: -3px;
+    border: 0;
 }
 button>img{
     background-color: red;
-    height: 36px;
-    width: 35px;
+    width: 100%;
+    height: 30px;
     border-radius: 4px;
 }
-#logoSearch>div>button{
+/* #logoSearch>div>button{
     height: 26px;
     width: 26px;
     margin: 0%;
     border: 0;
     background-color: white;
-}
+} */
 #searchbar{
     display: flex;
+    width: 70%;
 }
 #categories{
     display: flex;
     gap:3%;
+    justify-content: space-around;
     flex-wrap: wrap;
-    border: 1px solid black;
+    /* border-bottom: 1px solid black; */
     padding: 10px;
     /* text-decoration: none; */
-
+    padding-bottom: 0px;
+    width: 90%;
+    margin: auto;
 }
 #categories>a{
-    margin-bottom:1%;
+    margin-bottom:8px;
+    font-size: 14px;
+}
+#categories>a:last-child{
+    color:red;
+}
+.divider{
+    height: 1px;
+    width:100%;
+    background-color: #dadcdf;
+    margin: 1px 0;
 }
 div>a{
     text-decoration: none;
 }
-
+.footer{
+    min-width: 100%;
+    
+}
+.footer h4 ,.footer p,.footer span{
+    margin: 18px auto;
+    font-size: 12px;
+    color:white;
+}
 #fo_links{
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(83, 86, 88);
     color: white;
+   
 }
 #footerest{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgb(47, 51, 55);
     color: white;
+   
+    
+}
+#footerest >div {
+    width: 30%;
 }
 #footerest>div>span{
    padding: 10px;
+   
+}
+#footerest >div:first-child{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#footerest>div:first-child>p{
+    margin:8px;
+   
+    
+}
+#footerest >div:last-child{
+    display: flex;
+    justify-content: end;
 }
 
 *{
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }   
 #fridaySale{
-    width: 90%;
+    width: 75%;
     margin: auto;
 }
 #fridaySale >img{
@@ -94,7 +153,7 @@ div>a{
     display: flex;
 }
 .cmWidth{
-    width:90%;
+    width:70%;
     margin: auto;
 }
 .middleSale{
@@ -216,7 +275,7 @@ td{
     display: none;
     position: absolute;
     background-color: #fff;
-    min-width: 160px;
+    min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -233,9 +292,13 @@ td{
   
   }
   
-  .dropdown-content a:hover {background-color: #fff; color: black;}
+  .dropdown-content a:hover {
+      background-color: #fff; color: black;
+    }
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
 
   /* --------------Account_Drop Down menu------------------ */
   /* .account-dropdown {
@@ -299,29 +362,208 @@ td{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  
+    font-size: 14px;
   }
   div>div+hr{
       margin: 10px; 
   
   }
-  .sign >h2{
+  .sign >h4{
       margin: 0px;
   }
-  .account >h2{
+  .account >h4{
       margin: 0px;
   }
   
   
   
-  .account-dropdown-content > a:hover {background-color: #fff; color: black; text-decoration: underline;}
+  .account-dropdown-content > a:hover {
+      background-color: #fff; 
+      color: black; 
+      text-decoration: underline;
+    }
   
-  .account-dropdown:hover.account-dropdown-content {display: block;}
-  .sign_in:hover .sign{text-decoration:underline;}
-  .create_account:hover .account{text-decoration: underline;}
+  .account-dropdown:hover .account-dropdown-content {
+      display: block;
+    }
+  .sign_in:hover .sign{
+      text-decoration:underline;
+    }
+  .create_account:hover .account{
+      text-decoration: underline;
+    }
 #qlinks{
     display: flex;
+    width: 20%;
+    justify-content: space-evenly;
 }
 #qlinks>div{
     padding: 5%;
+}
+@media all and (max-width:1450px){
+    #logoSearch{
+        width:100%;
+    }
+    .cmWidth{
+        width: 100%;
+    }
+    #fridaySale{
+        width: 100%;
+    }
+}
+
+#hoveredCard{
+    position: absolute;
+    background-color: white;
+}
+
+  /* products.css */
+
+* {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #2f3337;
+}
+
+#middleSection {
+    width: 90%;
+    margin: auto;
+}
+
+#middleSection>h1 {
+    margin-bottom: 50px;
+}
+
+
+
+#sideGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#sideGrid>div {
+    background-color: #f5f5f5;
+}
+
+#sideGrid>div>img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+#sideGrid>div:last-child>img {
+    margin-top: 10px;
+}
+
+.featuredCategories>h2 {
+    margin-top: 0px;
+}
+
+.featuredCategories>p {
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+}
+
+#sideGrid>div:first-child {
+    margin-bottom: 15px;
+}
+
+.featuredCategories>p:hover {
+    background-color: #f5f5f5;
+    border-left: 2px solid #0272a2;
+}
+
+.featuredCategories>p:last-child {
+    font-weight: bold;
+    color: red;
+}
+
+.featuredCategories>p:last-child:hover {
+    border-left: 2px solid red;
+}
+
+.normalbold {
+    font-weight: normal;
+    margin-bottom: -15px;
+}
+
+#sideGrid h2 {
+    text-align: center;
+}
+
+#middleSection>h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#popularFurniture {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#popularFurniture>div {
+    background-color: #f5f5f5;
+}
+
+#popularFurniture p {
+    text-align: center;
+}
+
+#popularFurniture img {
+    width: 100%
+}
+
+#decorateIdeas,
+#chaiseLounge {
+    margin-top: 50px;
+    display: flex;
+}
+
+#decorateIdeas img,
+#chaiseLounge img {
+    width: 100%;
+}
+
+#decorateIdeas>div,
+#chaiseLounge>div {
+    width: 50%;
+}
+
+#chaiseLounge>div:last-child {
+    padding-left: 20px;
+}
+
+#decorateIdeas>div:first-child {
+    padding-right: 20px;
+}
+
+#decorateIdeas button,
+#chaiseLounge button {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #2f3337;
+    border-radius: 5px;
+}
+
+#decorateIdeas p,
+#chaiseLounge p {
+    font-size: 14px;
+    line-height: 1.3rem;
+}
+
+#moreFurniture {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#moreFurniture img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+#moreFurniture p {
+    text-align: center;
 }

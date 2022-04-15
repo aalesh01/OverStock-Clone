@@ -1,119 +1,159 @@
-*{
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    color:#2f3337;
+* {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #2f3337;
 }
-#middleSection{
-    width:90%;
+
+#middleSection {
+    width: 90%;
     margin: auto;
 }
-#middleSection >h1{
+
+#middleSection>h1 {
     margin-bottom: 50px;
 }
-#category{
+
+#middleSection >#category {
     display: grid;
     grid-template-columns: 25% 50% 25%;
 }
-#category > div >img{
+
+#middleSection >#category>div>img {
     width: 97%;
-    
+
 }
-#sideGrid{
+#middleSection>#category>div>p{
+    text-align: left;
+} 
+
+#sideGrid {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
-#sideGrid >div{
+
+#sideGrid>div {
     background-color: #f5f5f5;
 }
-#sideGrid >div >img{
+
+#sideGrid>div>img {
     display: block;
     margin: auto;
     width: 90%;
 }
-#sideGrid >div:last-child>img{
+
+#sideGrid>div:last-child>img {
     margin-top: 10px;
 }
-.featuredCategories >h2{
+
+.featuredCategories>h2 {
     margin-top: 0px;
 }
 
-.featuredCategories >p{
-    margin:0px;
+.featuredCategories>p {
+    margin: 0px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 20px;
 }
-#sideGrid >div:first-child{
+
+#sideGrid>div:first-child {
     margin-bottom: 15px;
 }
-.featuredCategories >p:hover{
+
+.featuredCategories>p:hover {
     background-color: #f5f5f5;
     border-left: 2px solid #0272a2;
 }
-.featuredCategories>p:last-child{
+
+.featuredCategories>p:last-child {
     font-weight: bold;
-    color:red;
+    color: red;
 }
-.featuredCategories >p:last-child:hover{
+
+.featuredCategories>p:last-child:hover {
     border-left: 2px solid red;
 }
-.normalbold{
+
+.normalbold {
     font-weight: normal;
     margin-bottom: -15px;
 }
-#sideGrid h2{
+
+#sideGrid h2 {
     text-align: center;
 }
-#middleSection >h2{
+
+#middleSection>h2 {
     text-align: center;
     margin-top: 40px;
 }
 
-#popularFurniture{
+#popularFurniture {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:20px;
-}
-#popularFurniture >div{
-    background-color: #f5f5f5;
-}
-#popularFurniture p{
-    text-align: center;
-}
-#popularFurniture img{
-    width:100%
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
-#decorateIdeas,#chaiseLounge{
+#popularFurniture>div {
+    background-color: #f5f5f5;
+}
+
+#popularFurniture p {
+    text-align: center;
+}
+
+#popularFurniture img {
+    width: 100%
+}
+
+#decorateIdeas,
+#chaiseLounge {
     margin-top: 50px;
     display: flex;
 }
 
-#chaiseLounge >div:last-child{
+#decorateIdeas img,
+#chaiseLounge img {
+    width: 100%;
+}
+
+#decorateIdeas>div,
+#chaiseLounge>div {
+    width: 50%;
+}
+
+#chaiseLounge>div:last-child {
     padding-left: 20px;
 }
-#decorateIdeas>div:first-child{
+
+#decorateIdeas>div:first-child {
     padding-right: 20px;
 }
 
-#decorateIdeas button,#chaiseLounge button{
+#decorateIdeas button,
+#chaiseLounge button {
     padding: 10px;
     background-color: white;
     border: 1px solid #2f3337;
     border-radius: 5px;
 }
-#decorateIdeas p,#chaiseLounge p{
+
+#decorateIdeas p,
+#chaiseLounge p {
     font-size: 14px;
     line-height: 1.3rem;
 }
-#moreFurniture{
+
+#moreFurniture {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
-#moreFurniture img{
+
+#moreFurniture img {
     display: block;
     margin: auto;
     width: 90%;
 }
-#moreFurniture p{
+
+#moreFurniture p {
     text-align: center;
 }
