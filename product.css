@@ -12,15 +12,18 @@
     margin-bottom: 50px;
 }
 
-#category {
+#middleSection >#category {
     display: grid;
     grid-template-columns: 25% 50% 25%;
 }
 
-#category>div>img {
+#middleSection >#category>div>img {
     width: 97%;
 
 }
+#middleSection>#category>div>p{
+    text-align: left;
+} 
 
 #sideGrid {
     display: grid;

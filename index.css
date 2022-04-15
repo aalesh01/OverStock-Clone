@@ -433,15 +433,7 @@ td{
     margin-bottom: 50px;
 }
 
-#category {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-}
 
-#category>div>img {
-    width: 97%;
-
-}
 
 #sideGrid {
     display: grid;
