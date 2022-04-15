@@ -1,0 +1,189 @@
+#paymentcontainer{
+    margin: 0px 250px;
+        /* text-align: center; */
+    }
+    .logo
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;    
+    }
+    .logo>div{
+        width: auto;
+        margin: 10px 10px;
+        padding: 0px 210px 0px 310px;
+        align-self: center;
+        
+    }
+    .logo>p{
+        width: 45%;
+        
+    }
+    /* .logo>p{
+        /* align-self:space-between; */
+    
+        .fedexterms{
+            margin: 0px;
+            display: flex;
+            justify-content: left;
+        }
+        .fedexterms img{
+            /* margin-top: 10px; */
+            width: 120pX;
+            height: 35px;
+        }
+        .fedexterms p{
+            margin-left: 10px;
+            font-size: 12px;
+            font-style: bold;
+        }
+        .fedexterms select{
+            margin-left: 400px;
+            align-self:center;
+            height: 30px;
+            text-decoration: underline;
+        }
+        .addressdetail{
+            margin: 0px 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .billaddress{
+            border: 1px solid #f1ede0;
+        }
+        .billaddress>p{
+            border: 1px solid #f1ede0;
+            margin: 0px;
+            height: 15px;
+            padding: 10px 10px;
+           
+            background-color:#f1ede0;
+        }
+        .billaddress form>label{
+            display: inline-block;
+            width: 150px;
+            margin: 10px 0px 10px 10px;
+            text-align: left;
+        }
+        .billaddress form>label>span{
+            color: red;
+        }
+        .billaddress form> #countrycode{
+            width: 10%;
+        }
+        .billaddress form> #phone{
+            width: 35%;
+        }
+        .billaddress form>input{
+            /* justify-content: right */
+            width: 50%;
+        }
+        .billaddress form>select{
+            width: 60%;
+        }
+        .shippingaddress{
+            border: 1px solid #f1ede0;
+        }
+        .shippingaddress>p{
+            border: 1px solid #f1ede0;
+            margin: 0px;
+            height: 15px;
+            padding: 10px 10px;
+           
+            background-color:#f1ede0;
+        }
+        .shippingaddress form>label{
+            display: inline-block;
+            width: 150px;
+            margin: 10px 0px 10px 10px;
+            text-align: left;
+        }
+        .shippingaddress form>label>span{
+            color: red;
+        }
+        .shippingaddress form> #countrycode1{
+            width: 10%;
+        }
+        .shippingaddress form> #phone1{
+            width: 35%;
+        }
+        .shippingaddress form>input{
+            /* justify-content: right */
+            width: 50%;
+        }
+        .shippingaddress form>select{
+            width: 60%;
+        }
+        .backcart{
+            margin: 50px 0px 5px 50px;
+            color: #f1ede0;
+        }
+        .backcart>b{
+            color: #f1ede0;
+        }
+        #payment{
+            border: 1px solid #f1ede0;
+            margin:50px ;
+        }
+        #payment>p{
+            border: 1px solid #f1ede0;
+           
+            background-color: #f0ece0;
+            margin: 0px;
+            padding: 10px;
+        }
+        #payment>img{
+            margin: 10px;
+        }
+        #payment>form>label{
+            display: inline-block;
+            width: 35%;
+            margin: 10px;
+        }
+        #payment >form>label>span{
+            color: red;
+        }
+        #payment>form>img{
+            margin-left: 38%;
+        }
+        .signupopper{
+            margin: 50px;
+        }
+        .signupopper >input {
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .signupopper >div> p{
+            margin: 20px 0px 0px 0px;
+            display: inline-block;
+        }
+        .signupopper>.placeorderbtn{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .placeorderbtn>p{
+            width: 70%;
+        }
+        .placeorderbtn>a>button{
+            width: 100%;
+            text-align: right;
+            height: 30px;
+            color: white;
+            margin: 20px 0px 0px;
+            background-color: #81a555;
+        }
+        .footerpolicy{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .footerresverd{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .footerresverd>p p{
+            font-size: 2px;
+        }
