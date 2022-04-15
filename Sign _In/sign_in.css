@@ -39,16 +39,31 @@
 
 
 }
-#pastext{
-font-size: 20px;  
-color: gray;
+#pastext_e{
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+   
+    
+    color: #626669;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+
+}
+#cp{
+
+    color: #626669 ;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    font-size: 14px;
+
+
 }
 #input_tag2{
 
 
     width: 80%;
     height: 35px
-
+    
 
 
 }
@@ -57,10 +72,12 @@ color: gray;
     width: 100%;
     height: 50px;
     background-color:rgb(84, 84, 173);
-    font-size: 20px;
-    color: white(29, 98, 158);
+    font-size: 16px;
+   
     margin-top: 5%;
     margin-bottom: 5%;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
 
 }
 #inline{
@@ -68,18 +85,86 @@ color: gray;
     background-color: aliceblue;
     display: flex;
     margin-top: 8%;
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: baseline;
+    text-decoration: none solid rgb(98, 102, 105);
+   
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif    ;
 }
 #foot{
 
     padding-left: 18%;
     margin-top: 3%;
+    
 }
 #for{
 
     text-align: center;
 }
-h3{
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 30px;
-margin-bottom: 10%;
+#head{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10%;
+    color: #444444;
+    }
+#cu_email{
+
+    font-size: 20px;  
+    color: gray;
+}
+
+#cus_mail{
+
+    width: 100%;
+    height: 35px;
+    border: 1px solid black;
+    
+}
+
+#cus_pas1{
+
+    
+    width: 70%;
+    line-height: 20px;
+    padding: 7px 15px;
+    font-size: 12px;
+
+}
+#cus_pas2{
+
+     
+    width: 70%;
+    line-height: 20px;
+    padding: 7px 15px;
+    font-size: 12px;
+    
+
+}
+#s_email{
+
+    
+    width: 100%;
+    height: 35px;
+    border: 1px solid black;
+    
+}
+#s_psa{
+
+    width: 100%;
+    height: 35px;
+}
+#p1{
+
+    margin-top: -1%;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#inp{
+
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
 }

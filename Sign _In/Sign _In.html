@@ -15,34 +15,35 @@
             
           <div id="form">
             <form action="">
-                <h3>Create Account</h3>
-                <p id="pastext">Email Address*</p>
-                <input id="input_tag" type="email" placeholder="Email">
+                <h1 id="head">Create Account</h1>
+                <p id="pastext_e" >Email Address*</p>
+                <input id="cus_mail" type="email" placeholder="Email">
               
 
 
              <div id="password">
                  <div>
-                <p id="pastext">Create Password*</p>
+                <p id="cp">Create Password*</p>
                    
-                <input id="input_tag2" type="password" placeholder="Password ">
+                <input id="cus_pas1" type="password" placeholder="Password ">
             </div>
             <div>
-                <p id="pastext">Confirm Password*</p>
-                <input id="input_tag2" type="password" placeholder="Confirm Password">
+                <p id="cp">Confirm Password*</p>
+                <input id="cus_pas2" type="password" placeholder="Confirm Password">
             </div>
             </div>
 <!-- <button type="check"></button>
  -->
-                <div id="inline"> <input type="checkbox" name="" id=""> <p> Sign up today for exclusive offers from Overstock.com delivered right to your inbox** </p></div>
+                <div id="inline"> <input type="checkbox" name="" id=""> <span><p > Sign up today for exclusive offers from Overstock.com delivered right to your inbox** </p></span></div>
                 <!-- <button>Creat Account</button> -->
-                <input type="submit" id="creat_acc" value="Creat Account">
-
+                <input type="submit" id="creat_acc" style="background-color: #0272a2;"   value="Creat Account">
+                
                 <hr>
-                <button style="background-color: white;" id="creat_acc"> Continue as a Guest</button>
-                <p>By creating an account or continuing as a Guest, you agree to our <b> Terms & Conditions</b>  and <b> Privacy Policy. </b></p>
+                <button style="background-color:#fafafa; color: #626669
+                ;" id="creat_acc"> Continue as a Guest</button>
+                <p id="inp" >By creating an account or continuing as a Guest, you agree to our <b> Terms & Conditions</b>  and <b> Privacy Policy. </b></p>
 
-                <p> <b> Terms & Conditions | Privacy Policy.</b>
+                <p id="inp"> <b> Terms & Conditions | Privacy Policy.</b>
 
                     **You can unsubscribe at any time </p>
                
@@ -54,14 +55,14 @@
         </div>
             <div id="sign_in">
 
-                <h3>Sign In</h3>
-                <p id="pastext">Email Address*</p>
+                <h1 id="head">Sign In</h1>
+                <p id="pastext_e">Email Address*</p>
           
-                <input id="input_tag" type="email" placeholder="Email">
-                <p id="pastext">Password*</p>
+                <input id="s_email" type="email" placeholder="Email">
+                <p id="pastext_e">Password*</p>
 
-                <input type="password" id="pas" placeholder="Password">
-                <div> <input id="creat_acc"  style="background-color: rgb(149, 214, 149);" type="submit" value="Sign in"></div>
+                <input type="password" id="s_psa" placeholder="Password">
+                <div> <input id="creat_acc"  style="background-color:#27865f;" type="submit"  onclick="login()" value="Sign in"></div>
                
                 <div id="for"><p ><U>Forgot your password?</U></p></div>
     
@@ -74,16 +75,17 @@
   
     <div id="foot">
 
-        <p>Return Policy</p>
-        <p>Contact Customer Care</p>
-        <p>FAQ</p>
-        <p>Privacy Policy</p>
-        <p>Site User Terms & Conditions*</p>
-        <p>© 2022 Overstock.com All Rights Reserved</p>
-        <p>We self-certify compliance with:</p>
+        <p id="p1">Return Policy</p>
+        <p id="p1">Contact Customer Care</p>
+        <p id="p1" >FAQ</p>
+        <p id="p1"> Privacy Policy</p>
+        <p id="p1">Site User Terms & Conditions*</p>
+        <p id="p1">© 2022 Overstock.com All Rights Reserved</p>
+        <p id="p1">We self-certify compliance with:</p>
         <img src="https://ak1.ostkcdn.com/img/mxc/20200630-intl-privacy_shield.png" alt="">
 
     </div>
+    <script src="Sign_in.js"></script>
 
 
 </body>
