@@ -39,6 +39,7 @@ function login(){
 
     if(userName.value == storedName && userPw.value == storedPw){
         alert('You are logged in.');
+        window.location.href = "../pages/index.html"    
     }else{
         alert('Error on login');
     }
