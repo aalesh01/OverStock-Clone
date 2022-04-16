@@ -210,29 +210,29 @@ var livingRoomF = ["Sofas & Couches",
     "Coffee & Accent Tables",
     "TV Stands"]
 
-var cat = document.querySelectorAll("#categories>a");
+// var cat = document.querySelectorAll("#categories>a");
 
-cat.forEach(element => {
-    console.log(element);
-    element.addEventListener("mouseover", function () {
-        console.log("hii");
-        var dropdown = document.createElement("div");
-        var heading = document.createElement("h2");
-        heading.innerText = "Living Room Furniture";
-        var list = document.createElement("ul");
-        livingRoomF.forEach(element => {
-            var listItem = document.createElement("p");
-            listItem.innerText = element;
-            list.append(listItem);
-        });
+// cat.forEach(element => {
+//     console.log(element);
+//     element.addEventListener("mouseover", function () {
+//         console.log("hii");
+//         var dropdown = document.createElement("div");
+//         var heading = document.createElement("h2");
+//         heading.innerText = "Living Room Furniture";
+//         var list = document.createElement("ul");
+//         livingRoomF.forEach(element => {
+//             var listItem = document.createElement("p");
+//             listItem.innerText = element;
+//             list.append(listItem);
+//         });
 
-        dropdown.append(heading, list);
-        document.getElementById("hoveredCard").innerHTML = "";
-        document.getElementById("hoveredCard").append(dropdown);
-    })
-    element.addEventListener("mouseleave", function () {
-        document.getElementById("hoveredCard").innerHTML = "";
+//         dropdown.append(heading, list);
+//         document.getElementById("hoveredCard").innerHTML = "";
+//         document.getElementById("hoveredCard").append(dropdown);
+//     })
+//     element.addEventListener("mouseleave", function () {
+//         document.getElementById("hoveredCard").innerHTML = "";
 
-    })
+//     })
 
-});
+// });
