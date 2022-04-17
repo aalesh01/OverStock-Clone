@@ -79,6 +79,7 @@ row2.append(text1, subTotalP);
 
 var checkoutBT = document.createElement("button");
 checkoutBT.innerText = "Check-Out";
+checkoutBT.setAttribute("id","coBT")
 checkoutBT.addEventListener("click", function () {
     document.location.href = ("../payment.html");
 })

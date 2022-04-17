@@ -61,3 +61,25 @@
     z-index: 10;
     margin:0 9% 0% 1%;
  }
+ #coBT{
+        background-color: #2f3337;
+        color: #fff;
+        align-items: center;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+        font-weight: 400;
+        justify-content: center;
+        margin-left: 90%;
+        padding: 0 16px;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+        font-size: 16px;
+        height: 44px;
+ }
