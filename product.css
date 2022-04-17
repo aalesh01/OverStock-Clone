@@ -24,6 +24,11 @@
 #middleSection>#category>div>p{
     text-align: left;
 } 
+#middleSection>#category>div>a>img{
+    max-width: 100%;
+    
+} 
+
 
 #sideGrid {
     display: grid;
@@ -105,6 +110,7 @@
     width: 100%
 }
 
+
 #decorateIdeas,
 #chaiseLounge {
     margin-top: 50px;
@@ -145,7 +151,7 @@
 
 #moreFurniture {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6,1fr);
 }
 
 #moreFurniture img {
@@ -156,4 +162,20 @@
 
 #moreFurniture p {
     text-align: center;
+}
+@media all and (min-width:86px) and (max-width:450px) {
+    #popularFurniture{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #moreFurniture{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media all and (min-width:451px) and (max-width:850px) {
+    #popularFurniture{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #moreFurniture{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
