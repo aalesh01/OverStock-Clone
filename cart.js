@@ -26,7 +26,7 @@ cartItems.forEach((element, index) => {
     subTotalPrice += +(element.price / 1.5);
 
     var dropdownBT = document.createElement("select");
-    
+
     for (var i = 1; i <= 20; i++) {
         var option = document.createElement("option");
         option.setAttribute("value", i);
@@ -77,7 +77,13 @@ row1.append(items, totalP);
 row2p5.append(text2, discount);
 row2.append(text1, subTotalP);
 
-table.append(row1, row2p5, row2)
-document.getElementById("totalAmount").append(table)
+var checkoutBT = document.createElement("button");
+checkoutBT.innerText = "Check-Out";
+checkoutBT.addEventListener("click", function () {
+    document.location.href = ("../payment.html");
+})
+
+table.append(row1, row2p5, row2, checkoutBT);
+document.getElementById("totalAmount").append(table);
 
 
