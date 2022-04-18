@@ -214,7 +214,7 @@
                         and you agree to <a href="https://crossborder.fedex.com/us/assets/legal_information.shtml">FedEx Cross Border Terms and Conditions</a> and
                         <a href="https://crossborder.fedex.com/us/assets/privacy_policy.shtml">Privacy Policy</a>
                     </p>
-                   <a href="#"> <button>PLACE ORDER>></button></a>
+                  <button onclick="alertFn()">PLACE ORDER>></button>
                 </div>
             </div>
             <!-- <div id="customertestnomilas">
@@ -252,4 +252,11 @@
 
     </div>
 </body>
+<script>
+    function alertFn(){
+        alert("Your Order has been Placed..")
+        // document.location.href = "index.html";
+        location.assign("index.html")
+    }
+</script>
 </html>

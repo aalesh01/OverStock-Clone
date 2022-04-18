@@ -166,8 +166,7 @@
         .placeorderbtn>p{
             width: 70%;
         }
-        .placeorderbtn>a>button{
-            width: 100%;
+        .placeorderbtn>button{
             text-align: right;
             height: 30px;
             color: white;
