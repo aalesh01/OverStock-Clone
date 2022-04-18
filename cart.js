@@ -21,9 +21,9 @@ cartItems.forEach((element, index) => {
 
 
     var price = document.createElement("p");
-    price.innerText = "Sale INR " + (element.price / 1.5);
+    price.innerText = "Sale INR " + Math.round(+(element.price / 1.5));
     price.setAttribute("id", "price")
-    subTotalPrice += +(element.price / 1.5);
+    subTotalPrice += Math.round(+(element.price / 1.5));
 
     var dropdownBT = document.createElement("select");
 
@@ -54,7 +54,7 @@ var items = document.createElement('td');
 items.innerText = "(" + cartItems.length + ") Items ";
 
 var totalP = document.createElement('td');
-totalP.innerText = "INR " + totalPrice
+totalP.innerText = "INR " + totalPrice.toFixed(2)
 
 var row2p5 = document.createElement('tr');
 
@@ -62,7 +62,7 @@ var text2 = document.createElement('td');
 text2.innerText = "Discount";
 
 var discount = document.createElement('td');
-discount.innerText = "INR " + (totalPrice - subTotalPrice);
+discount.innerText = "INR " + (totalPrice - subTotalPrice).toFixed(2);
 
 
 var row2 = document.createElement('tr');
@@ -71,7 +71,7 @@ var text1 = document.createElement('td');
 text1.innerText = "Your Total:";
 
 var subTotalP = document.createElement('td');
-subTotalP.innerText = "INR " + subTotalPrice;
+subTotalP.innerText = "INR " + subTotalPrice.toFixed(2);;
 
 row1.append(items, totalP);
 row2p5.append(text2, discount);
@@ -79,7 +79,7 @@ row2.append(text1, subTotalP);
 
 var checkoutBT = document.createElement("button");
 checkoutBT.innerText = "Check-Out";
-checkoutBT.setAttribute("id","coBT")
+checkoutBT.setAttribute("id", "coBT")
 checkoutBT.addEventListener("click", function () {
     document.location.href = ("../payment.html");
 })

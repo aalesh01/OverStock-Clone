@@ -1,47 +1,80 @@
-body{
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-h1{
+
+h1 {
     margin-left: 2%;
 }
-.asideContainer{
-        background: #fff;
-        border-bottom: 1px solid #dadcdf;
-        margin-bottom: -3px;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        width: 15%;
-        margin-left: 2%;
+
+.asideContainer {
+    background: #fff;
+    border-bottom: 1px solid #dadcdf;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 15%;
+    margin-left: 2%;
 }
-#allCards{
-    margin-left: 20%;
+
+#allCards {
+    margin-left: 10%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-top: -20%;
-    gap:3%;
-    margin-bottom: 87%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
     margin-right: 3%;
+    margin-bottom: 30px;
 }
-#allCards>div{
+
+#allCards>div {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
 
-
+#allCards>div>h3 {
+    color: rgb(199, 32, 44);
 
 }
-#allCards>div>h3{
-    color:rgb(199, 32, 44);
-    
-}
+
 #allCards>div>img {
     width: 100%;
     margin: auto;
 }
-#allCards>div>h3,#allCards>div>p,#allCards>div>button{
+
+#allCards>div>h3,
+#allCards>div>p,
+#allCards>div>button {
     margin-left: 3%;
-    margin-bottom:8% ;
+    margin-bottom: 8%;
+}
+
+button {
+    background-color:rgb(91, 169, 91);
+    border-radius: 4px;
+    padding: 5px 12px 5px 12px ;
+    position: relative;
+    border-color: #7ac89c;
+    color: #fff;
+    font-size: 20px;
+}
+button:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+.itemsContainer{
+    display: flex;
+    
+}
+@media all and (min-width:86px) and (max-width:450px) {
+    #allCards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media all and (min-width:451px) and (max-width:850px) {
+    #allCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
