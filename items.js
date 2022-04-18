@@ -141,6 +141,7 @@ itemsObj.forEach(element => {
     addToCartBT.addEventListener("click", function () {
         cartItems.push(element);
         localStorage.setItem("itemsInCart", JSON.stringify(cartItems));
+        alert("Added to Cart")
     })
 
     card.append(image, price, text, addToCartBT);
