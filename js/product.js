@@ -112,8 +112,11 @@ popularFurniture.forEach((element)=>{
     image.src=element.imageUrl;
     var p=document.createElement('p');
     p.innerText=element.text;
+    var a= document.createElement('a')
+    a.href="./pages/items.html"
+    a.append(image,p)
     var box=document.createElement('div');
-    box.append(image,p);
+    box.append(a);
     document.querySelector('#popularFurniture').append(box);
 });
 

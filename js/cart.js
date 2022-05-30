@@ -81,7 +81,7 @@ var checkoutBT = document.createElement("button");
 checkoutBT.innerText = "Check-Out";
 checkoutBT.setAttribute("id", "coBT")
 checkoutBT.addEventListener("click", function () {
-    document.location.href = ("../payment.html");
+    document.location.href = ("payment.html");
 })
 
 table.append(row1, row2p5, row2, checkoutBT);

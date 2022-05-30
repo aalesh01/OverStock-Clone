@@ -26,12 +26,15 @@ var saleData = [
 ];
 
 saleData.forEach((element) => {
+    var ad= document.createElement('a')
+    ad.href="../pages/items.html"
     var image = document.createElement('img');
     image.src = element.imageUrl;
     var imgContainer = document.createElement('div');
     var textContent = document.createElement('h4');
     textContent.innerText = element.text;
-    imgContainer.append(image, textContent);
+    ad.append(image,textContent)
+    imgContainer.append(ad);
     document.querySelector('#saleContainer').append(imgContainer);
 });
 
@@ -87,12 +90,15 @@ var categories = [
     }
 ];
 categories.forEach((element) => {
+    var a = document.createElement('a')
+    a.href= "../pages/items.html"
     var image = document.createElement('img');
     image.src = element.imageUrl;
     var imgContainer = document.createElement('div');
     var textContent = document.createElement('p');
     textContent.innerText = element.text;
-    imgContainer.append(image, textContent);
+    a.append(image, textContent);
+    imgContainer.append(a)
     document.querySelector('#category').append(imgContainer);
 });
 
@@ -121,6 +127,8 @@ var homeSpring = [
 ];
 
 homeSpring.forEach((element) => {
+    var a = document.createElement('a')
+    a.href= '../pages/items.html'
     var image = document.createElement('img');
     image.src = element.imageUrl;
     var imgContainer = document.createElement('div');
@@ -128,7 +136,8 @@ homeSpring.forEach((element) => {
     head.innerText = element.heading;
     var textContent = document.createElement('p');
     textContent.innerText = element.text;
-    imgContainer.append(image, head, textContent);
+    a.append(image, head, textContent);
+    imgContainer.append(a)
     document.querySelector('#homeSpring').append(imgContainer);
 });
 
@@ -160,6 +169,8 @@ var overstockBrands = [
     }
 ];
 overstockBrands.forEach((element) => {
+     var a = document.createElement('a')
+     a.href='../pages/items.html'
     var image = document.createElement('img');
     image.src = element.imageUrl;
     var imgContainer = document.createElement('div');
@@ -169,7 +180,8 @@ overstockBrands.forEach((element) => {
     t1.innerText = element.text1;
     t2.innerText = element.text2;
     t3.innerText = element.text3;
-    imgContainer.append(image, t1, t2, t3);
+    a.append(image, t1, t2, t3);
+    imgContainer.append(a)
     document.querySelector('#overstockBrands').append(imgContainer);
 });
 var yourStyle = [
@@ -190,6 +202,8 @@ var yourStyle = [
     }
 ];
 yourStyle.forEach((element) => {
+    var a = document.createElement('a')
+    a.href="../pages/items.html"
     var image = document.createElement('img');
     image.src = element.imageUrl;
     var imgContainer = document.createElement('div');
@@ -197,7 +211,8 @@ yourStyle.forEach((element) => {
     head.innerText = element.heading;
     var textContent = document.createElement('p');
     textContent.innerText = element.text;
-    imgContainer.append(image, head, textContent);
+    a.append(image, head, textContent);
+    imgContainer.append(a)
     document.querySelector('#yourStyle').append(imgContainer);
 });
 

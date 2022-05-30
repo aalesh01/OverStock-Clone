@@ -160,7 +160,7 @@ div>a{
     width: 75%;
     margin: auto;
 }
-#fridaySale >img{
+#fridaySale >a>img{
     width: 100%;
 }
 .subHeading{
@@ -168,6 +168,14 @@ div>a{
 }
 .subHeading >h2{
     text-align: center;
+}
+.subHeading >h3{
+    text-align: center;
+    margin: 10px auto;
+    padding: 0 0 20px 0;
+    font-size: 18px;
+    color: #444444;
+    max-width: 818px;
 }
 #saleContainer{
     display: grid;
@@ -180,16 +188,16 @@ div>a{
 .middleSale{
     margin: 40px auto;
 }
-.middleSale > img{
+.middleSale >a> img{
     width: 100%;
 }
 /* #saleContainer >div{
    flex:1;
 } */
-#saleContainer >div >img{
+#saleContainer >div >a>img{
     max-width: 100%;
 }
-#saleContainer >div > h4{
+#saleContainer >div >a> h4{
     margin: 0px;
     padding: 16px 10px;
     text-align: center;
@@ -200,10 +208,10 @@ div>a{
     margin-bottom: 40px;
 }
 
-#category >div >img{
+#category >div >a>img{
     max-width: 100%;
 }
-#category >div >p{
+#category >div>a >p{
     text-align: center;
     color: #545658;
 }
@@ -216,7 +224,7 @@ div>a{
    background-color: #f5f5f5;
 }
 
-.leftArr >div >img{
+.leftArr >div>a >img{
     max-width: 100%;
 }
 .leftArr >div >h3,.leftArr>div>p{
@@ -231,15 +239,15 @@ div>a{
     
     background-color: #f5f5f5;
 }
-#overstockBrands >div> img{
+#overstockBrands >div>a> img{
     max-width: 100%;
 }
-#overstockBrands >div >p{
+#overstockBrands >div>a >p{
     text-align: center;
     padding: 0px;
     margin: 5px;
 }
-#overstockBrands >div >p:nth-child(2){
+#overstockBrands >div>a >p:nth-child(2){
     font-weight: bold;
 }
 #overlayContainer{
@@ -250,8 +258,8 @@ div>a{
     position: absolute;
     bottom: 0;
 }
-.overlay >img{
-    width: 100%;
+.overlay>a >img{
+    width:100%;
 }
 
 #yourStyle{
@@ -323,42 +331,6 @@ td{
     }
 
   /* --------------Account_Drop Down menu------------------ */
-  /* .account-dropdown {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-  }
-  .account-dropdown a{
-      text-decoration: none;
-      color: #000101;
-  }
-  
-  .account-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .account-dropdown-content a {
-    color: #615d5d;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  
-  }
-  div>div+hr{
-      margin: 10px; 
-  
-  }
-  .sign >h2{
-      margin: 0px;
-  }
-  .account >h2{
-      margin: 0px;
-  } */
   .account-dropdown {
     position: relative;
     display: inline-block;
@@ -613,8 +585,11 @@ td{
 } */
 /* ---------------catogries drop down */
 
-.catdown-dropdown {
+#categories{
     position: relative;
+}
+.catdown-dropdown {
+    /* position: relative; */
     display: inline-block;
     text-decoration: none;
   }
@@ -632,11 +607,21 @@ td{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+  .catdown-dropdown-content1{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right:0px;  
+    background-color: #fff;
+    min-width: 950px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
   
   .catdown-dropdown-content a {
     color: #615d5d;
     padding: 12px 16px;
-    text-decoration: underline;
+    text-decoration: none;
     display: block;
     font-size: 14px;
   }
@@ -648,6 +633,10 @@ td{
     }
   
   .catdown-dropdown:hover .catdown-dropdown-content {
+      display: block;
+
+    }
+  .catdown-dropdown:hover .catdown-dropdown-content1 {
       display: block;
 
     }
@@ -666,4 +655,7 @@ td{
         display: grid;
         grid-template-rows: 1.5fr 1fr;
 
+    }
+    #salesdeals{
+        color: red;
     }
