@@ -3,8 +3,27 @@ else cartItems = JSON.parse(localStorage.getItem("itemsInCart"));
 
  var user=localStorage.getItem('user')
 
+ let logout =false
+if(user){ 
+    let log = document.createElement("button")
+    log.innerText='Log out'
+    logout = true
+    log.addEventListener('click', function (){
+        if(logout){
+          let remove =  document.querySelector(".qLinks")
+          remove.removeChild( remove.lastElementChild)
+          localStorage.removeItem('user')
+          logout = false
+            window.location.href= "./index.html"
+        }
+    } )
+    document.querySelector(".qLinks").append(log)
+
+
+}
+
 if(!user){
-    alert("Plase log in")
+    alert("Please log in")
     window.location.href='../Sign _In/Sign _In.html'
 }
 else{

@@ -3,6 +3,24 @@ if(localStorage.getItem('user')){
 }else{
     user =false
 }
+let logout =false
+if(user){ 
+    let log = document.createElement("button")
+    log.innerText='Log out'
+    logout = true
+    log.addEventListener('click', function (){
+        if(logout){
+          let remove =  document.querySelector(".qLinks")
+          remove.removeChild( remove.lastElementChild)
+          localStorage.removeItem('user')
+          logout = false
+            window.location.href= "./index.html"
+        }
+    } )
+    document.querySelector(".qLinks").append(log)
+
+
+}
 
 
 

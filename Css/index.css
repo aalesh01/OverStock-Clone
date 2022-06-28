@@ -659,3 +659,13 @@ td{
     #salesdeals{
         color: red;
     }
+    button{
+
+        background-color: rgb(91, 169, 91);
+        border-radius: 4px;
+        padding: 5px 12px 5px 12px;
+        position: relative;
+        border-color: #7ac89c;
+        color: #fff;
+    }
+    
