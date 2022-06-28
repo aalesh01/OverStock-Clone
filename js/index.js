@@ -1,3 +1,13 @@
+if(localStorage.getItem('user')){
+    user=true
+}else{
+    user =false
+}
+
+
+
+
+
 var saleData = [
     {
         imageUrl: "https://ak1.ostkcdn.com/img/mxc/04072022_HB_CMS_2.svg?imwidth=1920",

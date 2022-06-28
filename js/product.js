@@ -1,59 +1,59 @@
-var furnitureCategories=[
-    {
-        text:"Living Room Furniture"
-    },
-    {
-        text:"Dining Room Furniture"
-    },
-    {
-        text:"Bedroom Furniture"
-    },
-    {
-        text:"Patio Furniture"
-    },
-    {
-        text:"Kitchen Furniture"
-    },
-    {
-        text:"Entryway Furniture"
-    },
-    {
-        text:"Home Office Furniture"
-    },
-    {
-        text:"Small Space Furniture"
-    },
-    {
-        text:"Bathroom Furniture"
-    },
-    {
-        text:"Mattresses"
-    },
-    {
-        text:"Recreation Room"
-    },
-    {
-        text:"Kids & Toddler Furniture"
-    },
-    {
-        text:"Home Gym"
-    },
-    {
-        text:"Shop All Furniture on Sale"
-    }
-];
+// var furnitureCategories=[
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:""
+//     },
+//     {
+//         text:"  "
+//     }
+// ];
 
-var heading=document.createElement("h2");
-heading.innerText="Featured Categories";
+// var heading=document.createElement("h2");
+// heading.innerText="";
 
-document.querySelector('.featuredCategories').append(heading);
+// document.querySelector('.featuredCategories').append(heading);
 
 
-furnitureCategories.forEach((element)=>{
-    var textCont=document.createElement('p');
-    textCont.innerText=element.text;
-    document.querySelector('.featuredCategories').append(textCont);
-});
+// furnitureCategories.forEach((element)=>{
+//     var textCont=document.createElement('p');
+//     textCont.innerText=element.text;
+//     document.querySelector('.featuredCategories').append(textCont);
+// });
 
 var popularFurniture=[
     {
@@ -113,7 +113,7 @@ popularFurniture.forEach((element)=>{
     var p=document.createElement('p');
     p.innerText=element.text;
     var a= document.createElement('a')
-    a.href="./pages/items.html"
+    a.href=" ./items.html"
     a.append(image,p)
     var box=document.createElement('div');
     box.append(a);
@@ -200,7 +200,10 @@ furnitureItems.forEach((element)=>{
     image.src=element.imageUrl;
     var textCont=document.createElement('p');
     textCont.innerText=element.text;
+    var a= document.createElement('a')
+    a.href=" ./items.html"
+    a.append(image,textCont);
     var box=document.createElement('div');
-    box.append(image,textCont);
+    box.append(a);
     document.querySelector('#moreFurniture').append(box);
 });

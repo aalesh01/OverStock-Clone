@@ -1,3 +1,5 @@
+
+
 document.getElementById("creat_acc").addEventListener("click", stored);
 
 
@@ -38,8 +40,11 @@ function login() {
 
 
     if (userName.value == storedName && userPw.value == storedPw) {
+        // localStorage.setItem('username',userName.value)
         alert('You are logged in.');
-        window.location.href = "../index.html";
+        localStorage.setItem('user',true)
+        window.location.href = "../pages/index.html";
+        
     } else {
         alert('Error on login');
     }

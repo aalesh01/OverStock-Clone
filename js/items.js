@@ -1,3 +1,4 @@
+
 var itemsObj = [{
     "imgurl": "https://ak1.ostkcdn.com/images/products/20306592/Lotusville-24.5-inch-Vintage-PU-Leather-Counter-Height-Stools-Set-of-2-7cffe0b7-7653-4f15-8279-65ce9a00c9d1_600.jpg?imwidth=480&impolicy=medium",
     "price": "13509.34",
@@ -118,6 +119,20 @@ var itemsObj = [{
 
 }
 ];
+ 
+
+if(localStorage.getItem("myorderitem") === null) {
+    var myOrder = []
+}
+else{
+    myOrder = JSON.parse(localStorage.getItem("myorderitem"))
+}
+if(localStorage.getItem("myList") === null) {
+    var myList = []
+}
+else{
+    myList = JSON.parse(localStorage.getItem("myList"))
+}
 
 if (localStorage.getItem("itemsInCart") === null) var cartItems = [];
 else cartItems = JSON.parse(localStorage.getItem("itemsInCart"));
@@ -139,12 +154,46 @@ itemsObj.forEach(element => {
     addToCartBT.setAttribute("class", "addTocartBT");
 
     addToCartBT.addEventListener("click", function () {
+        var user=localStorage.getItem('user')
+ if(!user){
+    alert("Plase log in")
+    window.location.href='../Sign _In/Sign _In.html'
+    }
+    else{
         cartItems.push(element);
+        myOrder.push(element)
+
+        localStorage.setItem("myorderitem", JSON.stringify(myOrder));
         localStorage.setItem("itemsInCart", JSON.stringify(cartItems));
         alert("Added to Cart");
+
+    }
+
+})
+    var addToList = document.createElement("button");
+    addToList.innerText = "Add to Your List";
+    addToCartBT.setAttribute("class", "addTocartBT");
+
+    addToList.addEventListener("click", function () {
+        var user=localStorage.getItem('user')
+        if(!user){
+           alert("Plase log in")
+           window.location.href='../Sign _In/Sign _In.html'
+           }
+           else{
+            myList.push(element);
+        // myOrder.push(element)
+
+        // localStorage.setItem("myorderitem", JSON.stringify(myOrder));
+        localStorage.setItem("myList", JSON.stringify(myList));
+        alert("Added to Your List");
+
+           }
+        
+        
     })
 
-    card.append(image, price, text, addToCartBT);
+    card.append(image, price, text, addToCartBT, addToList);
 
     document.getElementById("allCards").append(card);
 

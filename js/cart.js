@@ -1,7 +1,14 @@
 if (localStorage.getItem("itemsInCart") === null) var cartItems = [];
 else cartItems = JSON.parse(localStorage.getItem("itemsInCart"));
 
-var totalPrice = 0;
+ var user=localStorage.getItem('user')
+
+if(!user){
+    alert("Plase log in")
+    window.location.href='../Sign _In/Sign _In.html'
+}
+else{
+    var totalPrice = 0;
 var subTotalPrice = 0;
 cartItems.forEach((element, index) => {
     var item = document.createElement("div");
@@ -25,14 +32,14 @@ cartItems.forEach((element, index) => {
     price.setAttribute("id", "price")
     subTotalPrice += Math.round(+(element.price / 1.5));
 
-    var dropdownBT = document.createElement("select");
+    // var dropdownBT = document.createElement("select");
 
-    for (var i = 1; i <= 20; i++) {
-        var option = document.createElement("option");
-        option.setAttribute("value", i);
-        option.innerText = i;
-        dropdownBT.append(option);
-    }
+    // for (var i = 1; i <= 20; i++) {
+    //     var option = document.createElement("option");
+    //     option.setAtatribute("value", i);
+    //     option.innerText = i;
+    //     dropdownBT.append(option);
+    // }
 
     var removeBT = document.createElement("button");
     removeBT.innerText = "Remove";
@@ -43,7 +50,7 @@ cartItems.forEach((element, index) => {
         document.location.reload();
     })
 
-    itemDetails.append(text, strikText, price, dropdownBT, removeBT);
+    itemDetails.append(text, strikText, price, removeBT);
     item.append(image, itemDetails);
     document.getElementById("pList").append(item);
 });
@@ -86,5 +93,8 @@ checkoutBT.addEventListener("click", function () {
 
 table.append(row1, row2p5, row2, checkoutBT);
 document.getElementById("totalAmount").append(table);
+
+}
+
 
 

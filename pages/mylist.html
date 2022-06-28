@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/items.css">
+    <!-- <link rel="stylesheet" href="../Css/items.css"> -->
     <link rel="stylesheet" href="../Css/index.css">
-    <title>Items</title>
+    <title>My List</title>
 </head>
 <body>
     <div class="nav">
@@ -21,9 +21,9 @@
             </div>
             <div class="qLinks">
                 <div class="account-dropdown">
-                    <a href=""> <img style="height: 20px; width:20px; margin-left: 20px;" src="https://img.icons8.com/ios-glyphs/344/guest-male.png" alt=""> <br>
-                        Account</a>
-                   
+                    <img style="height: 20px; width:20px; margin-left: 20px;"
+                        src="https://img.icons8.com/ios-glyphs/344/guest-male.png" alt=""> <br>
+                    <a href="">Account</a>
                     <div class="account-dropdown-content">
                         <div class="sign_in">
                             <a href="../Sign _In/Sign _In.html" class="sign">
@@ -42,12 +42,13 @@
                         <hr>
                         <!-- <a href="">My Account</a> -->
                         <a href="./myorders.html">My Orders</a>
-                        
+                        <!-- <a href="">My Reviews</a>
+                        <a href="">Help</a> -->
                     </div>
                 </div>
                 <div class="dropdown">
                     <img style="height: 20px; width:20px" src="https://img.icons8.com/ios/344/like--v1.png" alt=""> <br>
-                    <a href="./mylist.html">List</a>
+                    <a href="mylist.html">List</a>
                     <!-- <div class="dropdown-content">
                         <a href="">Favourites</a>
                         <a href="">Save For Later</a>
@@ -56,12 +57,11 @@
                         <a href="">Find a List</a>
                     </div> -->
                 </div>
-                
-                <div> 
-                    
-                    <a href="cart.html">
-                        <img style="height: 20px; width:20px" src="https://img.icons8.com/dotty/344/favorite-cart.png" alt=""> <br>   
-                        Cart</a>
+    
+                <div>
+                    <img style="height: 20px; width:20px" src="https://img.icons8.com/dotty/344/favorite-cart.png" alt="">
+                    <br>
+                    <a href="cart.html">Cart</a>
                 </div>
             </div>
         </div>
@@ -123,41 +123,18 @@
     
     
     </div>
-    
-    
-  
 
-    <h1>Furniture Sale</h1>
-    <div class="itemsContainer">
-     <div class="asideContainer">
-         <div>
-             
-        </div>
-        <div>
-            
-        </div>
-        <div>
-        
-        </div>
-        <div>
-            
-        </div>
-        <div>
-        
-        </div>
-        <div>
-        
-        </div>
-        <div>
-        
-        </div>
-
-       
-     </div>
-     
-     <div id="allCards"> </div>
+    <h1>My List</h1>
+    <div id="allCards" style="width: 70%; margin: auto;"> </div>
     </div>
-
+    <div id="cartContainer">
+        <div id="pList">
+        
+        </div>
+        <div id="totalAmount">
+        
+        </div>
+    </div>
     <div class="footer">
         <div id="fo_links">
             <div>
@@ -186,7 +163,6 @@
             <div>
                 <h4>MORE WAYS TO SHOP</h4>
                 <p>Tips & Ideas</p>
-                <p>Deals</p>
                 <p>Clearance</p>
                 <p>New Arrivals</p>
             </div>
@@ -207,5 +183,5 @@
     </div>
 
 </body>
-<script src="../js/items.js"></script>
+<script src="../js/list.js"></script>
 </html>
