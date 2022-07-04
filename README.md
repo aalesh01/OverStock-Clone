@@ -15,7 +15,7 @@ OverStock is an E-Commerce website for furniture and home decor needs of a moder
 
 
 # Our experience with building a Overstock clone
-We are a group of 3 members who made a clone of this website within a week. This is our first project with Masai. Our team members are Aalesh Patil, Jitender Kumar, Binod Nayak, Md Irshad. This is the first time we have collaborated using GitHub.Thanks to Masai to made this project possible
+We are a group of 4 members who made a clone of this website within a week. This is our first project with Masai. Our team members are Aalesh Patil, Jitender Kumar, Binod Nayak, Md Irshad. This is the first time we have collaborated using GitHub.Thanks to Masai to made this project possible
 
 # Technology we used:
 HTML and CSS: Hypertext Markup Language and Cascading Style Sheets are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the layout, for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web pages and Web Applications. Web developers use HTML keywords or tags to instruct the Web browser application on how to format and display the content of Web pages.
